@@ -1,0 +1,9 @@
+# Base node: define extra inspector tabs
+'TYPO3.Neos:Node':
+  ui:
+    inspector:
+      tabs:
+        extended:
+          label: 'Soee.Bootstrap:Inspector:tabs.extended'
+          position: 100
+          icon: 'icon-cogs'

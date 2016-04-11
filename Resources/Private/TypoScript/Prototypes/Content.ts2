@@ -1,0 +1,6 @@
+#
+# Soee.Bootstrap:Content is a base for all Soee.Bootstrap:* components.
+# Add here properties/functionality which you don't want to add
+# to default TYPO3.Neos:Content.
+#
+prototype(Soee.Bootstrap:Content) < prototype(TYPO3.Neos:Content)

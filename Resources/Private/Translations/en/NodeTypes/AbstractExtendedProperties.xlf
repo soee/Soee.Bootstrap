@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="Soee.Bootstrap" source-language="en" datatype="plaintext">
+		<body>
+			<trans-unit id="groups.tagsAndAttributes" xml:space="preserve">
+                <source>Tags and attributes</source>
+            </trans-unit>
+			<trans-unit id="groups.utilityClasses" xml:space="preserve">
+                <source>Utility classes</source>
+            </trans-unit>
+			<trans-unit id="groups.customCode" xml:space="preserve">
+                <source>Custom code</source>
+            </trans-unit>
+
+			<trans-unit id="properties.addFloatClass" xml:space="preserve">
+				<source>Float</source>
+			</trans-unit>
+			<trans-unit id="properties.addFloatClass.ui.help.message" xml:space="preserve">
+				<source>The float option specifies that an element should be taken from the normal flow and placed along the `left` or `right` side of its container. It's called _float layouts_ where elements are floated to be stack horizontally. Text and other elements will then wrap around the floated one.</source>
+			</trans-unit>
+			<trans-unit id="properties.addClearfixClass" xml:space="preserve">
+				<source>Clear Float (clearfix)</source>
+			</trans-unit>
+			<trans-unit id="properties.addClearfixClass.ui.help.message" xml:space="preserve">
+				<source>
+                    There are two cases you might want to use this option:
+
+                    1. Set it together with _Float_ option to combat [the zero-height container problem](http://complexspiral.com/publications/containing-floats/). Read on the information there to learn more about the problem.
+                    2. Set it on a content elements following that one with _Float_ option set. You do that to stop the wrapping behaviour around a floated element.
+                </source>
+			</trans-unit>
+			<trans-unit id="properties.customCssClass" xml:space="preserve">
+				<source>Element custom CSS class name(s)</source>
+			</trans-unit>
+			<trans-unit id="properties.customCssClass.ui.help.message" xml:space="preserve">
+				<source>|
+				    When set, this value will be added to the element's `class` attribute in the HTML code.
+
+                    Note: multiple classes must be **space-separated**.
+                </source>
+			</trans-unit>
+			<trans-unit id="properties.customTagName" xml:space="preserve">
+				<source>Element semantic tag type</source>
+			</trans-unit>
+			<trans-unit id="properties.customTagName.ui.help.message" xml:space="preserve">
+				<source>If you peculiar about HTML markup and its semanticity, you can set here the wrapping tag for the element. Otherwise the default will be `div`.</source>
+			</trans-unit>
+			<trans-unit id="properties.customHtmlId" xml:space="preserve">
+				<source>Element custom HTML ID</source>
+			</trans-unit>
+			<trans-unit id="properties.customHtmlId.ui.help.message" xml:space="preserve">
+				<source>If provided, this value will be set as the element's `id` attribute in the HTML code</source>
+			</trans-unit>
+			<trans-unit id="properties.customUserAttributes" xml:space="preserve">
+				<source>Element extra HTML attributes</source>
+			</trans-unit>
+			<trans-unit id="properties.customUserAttributes.ui.help.message" xml:space="preserve">
+				<source>
+                    Add any custom HTML attributes to the element.
+                    One per line.
+
+                    ##### Example
+                    ```
+                    data-something=value
+                    data-options={"foo":"bar"}
+                    tabindex=0
+                    ```
+                </source>
+			</trans-unit>
+			<trans-unit id="properties.customCssCode" xml:space="preserve">
+				<source>Element inline CSS</source>
+			</trans-unit>
+			<trans-unit id="properties.customCssCode.ui.help.message" xml:space="preserve">
+				<source>Add any necessary CSS styling for the element. The value will be set for the element's `style` attribute in the HTML code.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

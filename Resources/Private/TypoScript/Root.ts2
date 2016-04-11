@@ -1,0 +1,5 @@
+# TYPO3 Neos objects amends
+include: Neos/*
+
+# Soee.Bootstrap prototypes
+include: Prototypes/*

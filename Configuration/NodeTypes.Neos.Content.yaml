@@ -1,0 +1,25 @@
+# -----------------------------------------------------------------------------
+#
+# Diable some crore NodeTypes
+#
+# -----------------------------------------------------------------------------
+
+'TYPO3.Neos.NodeTypes:TwoColumn':
+  abstract: TRUE
+
+'TYPO3.Neos.NodeTypes:ThreeColumn':
+  abstract: TRUE
+
+'TYPO3.Neos.NodeTypes:FourColumn':
+  abstract: TRUE
+
+# -----------------------------------------------------------------------------
+#
+# Extend TYPO3.Neos:Content
+#
+# -----------------------------------------------------------------------------
+
+'TYPO3.Neos:Content':
+  superTypes:
+    'Soee.Bootstrap:AbstractVisibility': TRUE
+    'Soee.Bootstrap:AbstractExtendedProperties': TRUE

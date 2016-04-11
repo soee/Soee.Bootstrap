@@ -1,0 +1,7 @@
+prototype(Soee.Bootstrap:Video) < prototype(Soee.Bootstrap:Content) {
+    attributes.class.base = 'embed-responsive'
+    attributes.class.source = ${q(node).property('videoSource')}
+    attributes.class.aspectRatio = ${q(node).property('aspectRatio') ? String.trim('embed-responsive-') + q(node).property('aspectRatio') : 'embed-responsive-16by9'}
+
+    videoId = ${q(node).property('videoId')}
+}

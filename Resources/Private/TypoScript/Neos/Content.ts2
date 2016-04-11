@@ -1,0 +1,41 @@
+prototype(TYPO3.Neos:Content) {
+    attributes.class = TYPO3.TypoScript:RawArray {
+        # configured in NoteTypes.AbstractExtendedProperties
+        clearfix = ${q(node).property('addClearfixClass') ? 'clearfix' : null}
+        clearfix.@if.set = ${q(node).property('addClearfixClass') == true}
+        clearfix.@position = '40'
+
+        float = ${q(node).property('addFloatClass')}
+        flaot.@if.set = ${String.isBlank(q(node).property('addFloatClass')) != true}
+        float.@after = 'clearfix'
+
+        # configured in NoteTypes.AbstractVisibility
+        showByScreenSize = ${q(node).property('classShowByScreenSize')}
+        showByScreenSize.@if.set = ${String.isBlank(q(node).property('classShowByScreenSize')) != true}
+        showByScreenSize.@position = '60'
+
+        hideByScreenSize = ${q(node).property('classHideByScreenSize')}
+        hideByScreenSize.@if.set = ${String.isBlank(q(node).property('classHideByScreenSize')) != true}
+        hideByScreenSize.@after = 'showByScreenSize'
+
+        printVisibility = ${q(node).property('classPrintVisibility')}
+        printVisibility.@if.set = ${String.isBlank(q(node).property('classPrintVisibility')) != true}
+        printVisibility.@after = 'hideByScreenSize'
+
+        hide = ${q(node).property('classHide') ? 'hidden' : null}
+        hide.@after = 'printVisibility'
+
+        # configured in NoteTypes.AbstractExtendedProperties
+        customClass = ${q(node).property('customCssClass')}
+        customClass.@position = 'end 20'
+    }
+
+    # configured in NoteTypes.AbstractExtendedProperties
+    attributes.id = ${q(node).property('customHtmlId') ? String.trim(q(node).property('customHtmlId')) : null}
+    attributes.style = ${q(node).property('customCssCode') ? String.trim(q(node).property('customCssCode')) : null}
+    attributes.customUserAttributes = ${q(node).property('customUserAttributes') ? q(node).property('customUserAttributes') : null}
+
+    # Support for custom semantic wrapper tag from Soee.Bootstrap:AbstractExtendedProperties
+    tagName = ${q(node).property('customTagName')}
+    tagName.@process.default = ${value ? value : 'div'}
+}

@@ -1,0 +1,10 @@
+prototype(Soee.Bootstrap:GridRow) < prototype(Soee.Bootstrap:Content) {
+    templatePath = 'resource://Soee.Bootstrap/Private/Templates/NodeTypes/GridRow.html'
+    sectionName = 'gridRow'
+
+    attributes.class {
+        row = 'row'
+    }
+
+    rowContent = TYPO3.Neos:ContentCollectionRenderer
+}

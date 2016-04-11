@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="Soee.Bootstrap" source-language="en" datatype="plaintext">
+		<body>
+			<trans-unit id="ui.label" xml:space="preserve">
+				<source>Grid Column</source>
+			</trans-unit>
+
+		    <trans-unit id="groups.columnSettings" xml:space="preserve">
+                <source>Column settings</source>
+        	</trans-unit>
+
+			<trans-unit id="properties.classColumnWidth" xml:space="preserve">
+				<source>Column width</source>
+			</trans-unit>
+			<trans-unit id="properties.classColumnOrder" xml:space="preserve">
+				<source>Column order</source>
+			</trans-unit>
+			<trans-unit id="properties.classColumnOffset" xml:space="preserve">
+				<source>Column offset</source>
+			</trans-unit>
+			<trans-unit id="properties.classColumnReset" xml:space="preserve">
+				<source>Column reset</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

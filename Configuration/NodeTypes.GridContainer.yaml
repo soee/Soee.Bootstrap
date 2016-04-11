@@ -1,0 +1,31 @@
+'Soee.Bootstrap:GridContainer':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+    'TYPO3.Neos:ContentCollection': TRUE
+  constraints:
+    nodeTypes:
+      'Soee.Bootstrap:GridRow': TRUE
+      '*': FALSE
+  ui:
+    label: i18n
+    icon: 'icon-check-empty'
+    group: 'structure'
+    position: 100
+    inlineEditable: TRUE
+    inspector:
+      groups:
+        gridContainerSettings:
+          label: i18n
+          tab: 'default'
+          position: 10
+  properties:
+    isFluid:
+      type: boolean
+      defaultValue: FALSE
+      ui:
+        label: i18n
+        help:
+          message: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'gridContainerSettings'

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="Soee.Bootstrap" source-language="en" datatype="plaintext">
+		<body>
+			<trans-unit id="devices.extraSmall" xml:space="preserve">
+				<source>Extra small</source>
+			</trans-unit>
+			<trans-unit id="devices.small" xml:space="preserve">
+				<source>Small</source>
+			</trans-unit>
+			<trans-unit id="devices.medium" xml:space="preserve">
+				<source>Medium</source>
+			</trans-unit>
+			<trans-unit id="devices.large" xml:space="preserve">
+				<source>Large</source>
+			</trans-unit>
+			<trans-unit id="devices.extraLarge" xml:space="preserve">
+				<source>Extra large</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

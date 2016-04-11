@@ -1,0 +1,13 @@
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+
+<!-- Grid Column element -->
+<f:section name="gridColumn">
+    <f:if condition="{addColumnReset}">
+        <f:then>
+            <div class="clearfix {columnResetClasses}"></div>
+        </f:then>
+    </f:if>
+    <{tagName} {attributes->f:format.raw()}>
+        <ts:render path="columnContent" />
+    </{tagName}>
+</f:section>

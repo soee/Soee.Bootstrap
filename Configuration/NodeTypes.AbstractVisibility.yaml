@@ -1,0 +1,102 @@
+'Soee.Bootstrap:AbstractVisibility':
+  abstract: TRUE
+  properties:
+    classHide:
+      type: boolean
+      ui:
+        label: i18n
+        help:
+          message: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'visibility'
+          position: 40
+    classShowByScreenSize:
+      type: string
+      ui:
+        label: i18n
+        help:
+          message: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'visibility'
+          position: 50
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: '_None'
+            allowEmpty: TRUE
+            values:
+              show-for-small-only:
+                label: '_Show for small only'
+              show-for-medium-up:
+                label: '_Show for medium and up'
+              show-for-medium-only:
+                label: '_Show for medium only'
+              show-for-large-up:
+                label: '_Show for large and up'
+              show-for-large-only:
+                label: '_Show for large only'
+              show-for-xlarge-up:
+                label: '_Show for xlarge and up'
+              show-for-xlarge-only:
+                label: '_Show for xlarge only'
+              show-for-xxlarge-up:
+                label: '_Show for xxlarge and up'
+    classHideByScreenSize:
+      type: string
+      ui:
+        label: i18n
+        help:
+          message: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'visibility'
+          position: 60
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: '_None'
+            allowEmpty: TRUE
+            values:
+              hidden-xs-down:
+                label: '_Hide for extra small'
+              hidden-sm-down:
+                label: _'Hide for small and down'
+              hidden-md-down:
+                label: '_Hide for medium and down'
+              hidden-lg-down:
+                label: '_Hide for large and down'
+              hidden-xl-down:
+                label: '_Hide for extra large and down'
+              hidden-xs-up:
+                label: '_Hide for extra small and up'
+              hidden-sm-up:
+                label: '_Hide for small and up'
+              hidden-md-up:
+                label: '_Hide for medium and up'
+              hidden-lg-up:
+                label: '_Hide for large and up'
+              hidden-xl-up:
+                label: '_Hide for extra large and up'
+    classPrintVisibility:
+      type: string
+      ui:
+        label: i18n
+        help:
+          message: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'visibility'
+          position: 70
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: '_None'
+            allowEmpty: TRUE
+            values:
+              visible-print-block:
+                label: '_Visible as block element'
+              visible-print-inline:
+                label: '_Visible as inline element'
+              visible-print-inline-block:
+                label: '_Visible as inline-block element'
+              hidden-print:
+                label: '_Hidden'

@@ -1,0 +1,55 @@
+'TYPO3.Neos.NodeTypes:Image':
+  ui:
+    inspector:
+      tabs:
+        image:
+          label: 'Soee.Bootstrap:NodeTypes.Image:tabs.image'
+          position: 10
+          icon: 'icon-picture'
+      groups:
+        imageSettings:
+          label: 'Soee.Bootstrap:NodeTypes.Image:groups.imageSettings'
+          position: 10
+          tab: image
+
+  properties:
+
+    # isFluid ---------------------------------------
+
+    isFluid:
+      type: boolean
+      defaultValue: true
+      ui:
+        label: 'Soee.Bootstrap:NodeTypes.Image:properties.isFluid'
+        reloadIfChanged: TRUE
+        inspector:
+          group: imageSettings
+          position: 10
+      validation:
+        'TYPO3.Neos/Validation/BooleanValidator': []
+
+    # shape -----------------------------------------
+
+    shape:
+      type: string
+      ui:
+        label: 'Soee.Bootstrap:NodeTypes.Image:properties.shape'
+        help:
+          message: 'Soee.Bootstrap:NodeTypes.Image:properties.shape.ui.help.message'
+        reloadIfChanged: TRUE
+        inspector:
+          group: imageSettings
+          position: 15
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: ''
+            allowEmpty: TRUE
+            values:
+              rounded:
+                label: 'Soee.Bootstrap:NodeTypes.Image:properties.shape.rounded'
+              circle:
+                label: 'Soee.Bootstrap:NodeTypes.Image:properties.shape.circle'
+              thumbnail:
+                label: 'Soee.Bootstrap:NodeTypes.Image:properties.shape.thumbnail'
+      validation:
+        'TYPO3.Neos/Validation/StringValidator': []

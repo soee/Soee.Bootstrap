@@ -1,0 +1,10 @@
+prototype(Soee.Bootstrap:GridContainer) < prototype(Soee.Bootstrap:Content) {
+    templatePath = 'resource://Soee.Bootstrap/Private/Templates/NodeTypes/GridContainer.html'
+    sectionName = 'gridContainer'
+
+    attributes.class {
+        fluid = ${q(node).property('isFluid') == true ? 'container-fluid': 'container'}
+    }
+
+    containerContent = TYPO3.Neos:ContentCollectionRenderer
+}

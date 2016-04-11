@@ -1,0 +1,27 @@
+{
+  "name": "soee-bootstrap",
+  "version": "0.0.0",
+  "description": "Twitter Bootstrap components for Neos CMS.",
+  "author": "Marcin Sągol <kontakt@soee.pl>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soee/Soee.Bootstrap"
+  },
+  "bugs": {
+    "url": "https://github.com/soee/Soee.Bootstrap/issues"
+  },
+  "keywords": [
+    "twitter",
+    "bootstrap",
+    "neos",
+    "cms",
+    "components",
+    "css",
+    "javascript",
+    "frontend",
+    "configuration",
+    "nodetype"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+prototype(TYPO3.Neos.NodeTypes:Image) {
+    templatePath = 'resource://Soee.Bootstrap/Private/Templates/NodeTypes/Image.html'
+
+    imageClass = TYPO3.TypoScript:RawArray
+    imageClass {
+        fluid = 'img-fluid'
+        fluid.@if.isFluid = ${q(node).property('isFluid') == true}
+        shape = ${'img-' + q(node).property('shape')}
+        shape.@if.hasShape = ${String.isBlank(q(node).property('shape')) == false}
+    }
+
+    imageClass.@process.implode = ${Array.join(value, ' ')}
+}

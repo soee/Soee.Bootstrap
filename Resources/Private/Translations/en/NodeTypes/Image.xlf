@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="Soee.Bootstrap" source-language="en" datatype="plaintext">
+		<body>
+
+		    <trans-unit id="tabs.image" xml:space="preserve">
+                <source>Image Settings</source>
+        	</trans-unit>
+
+		    <trans-unit id="groups.imageSettings" xml:space="preserve">
+                <source>Image Settings</source>
+        	</trans-unit>
+
+		    <trans-unit id="properties.isFluid" xml:space="preserve">
+                <source>Is fluid (responsive)</source>
+        	</trans-unit>
+		    <trans-unit id="properties.shape" xml:space="preserve">
+                <source>Shape</source>
+        	</trans-unit>
+		    <trans-unit id="properties.shape.ui.help.message" xml:space="preserve">
+                <source>Add shape class to an img element to easily style images in any project. Rounded images will work only if styles were compiled with $enable-rounded option set to true.</source>
+        	</trans-unit>
+		    <trans-unit id="properties.shape.rounded" xml:space="preserve">
+                <source>Rounded</source>
+        	</trans-unit>
+		    <trans-unit id="properties.shape.circle" xml:space="preserve">
+                <source>Circle</source>
+        	</trans-unit>
+		    <trans-unit id="properties.shape.thumbnail" xml:space="preserve">
+                <source>Thumbnail</source>
+        	</trans-unit>
+
+		</body>
+	</file>
+</xliff>

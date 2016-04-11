@@ -1,0 +1,41 @@
+'Soee.Bootstrap:GridRow':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+    'TYPO3.Neos:ContentCollection': TRUE
+  constraints:
+    nodeTypes:
+      'Soee.Bootstrap:GridColumn': TRUE
+      '*': FALSE
+  ui:
+    label: i18n
+    icon: 'icon-reorder'
+    group: 'structure'
+    position: 105
+    inlineEditable: TRUE
+    inspector:
+      groups:
+        gridRowSettings:
+          label: i18n
+          tab: 'default'
+          position: 5
+  #@todo handle this in prototyping and template
+  properties:
+    wrapWithContainer:
+      type: string
+      ui:
+        label: i18n
+        help:
+          message: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'gridRowSettings'
+          position: 5
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: '_None'
+            allowEmpty: TRUE
+            values:
+              container:
+                label: '_Standard'
+              container-fluid:
+                label: '_Fluid'

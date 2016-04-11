@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="Soee.Bootstrap" source-language="en" datatype="plaintext">
+		<body>
+			<trans-unit id="properties.classHide" xml:space="preserve">
+				<source>Visually hide</source>
+			</trans-unit>
+			<trans-unit id="properties.classHide.ui.help.message" xml:space="preserve">
+				<source>
+				    When set, element will be rendered in HTML output, but will be visually hidden.
+
+                    Developer info: it's achieved by adding `hide` CSS class to the element. Use it if you want programmatically hide/show some element(s).
+                </source>
+			</trans-unit>
+			<trans-unit id="properties.classShowByScreenSize" xml:space="preserve">
+				<source>Show by screen size</source>
+			</trans-unit>
+			<trans-unit id="properties.classShowByScreenSize.ui.help.message" xml:space="preserve">
+				<source>Set the visibility of the content element for a particular device.</source>
+			</trans-unit>
+			<trans-unit id="properties.classHideByScreenSize" xml:space="preserve">
+				<source>Hide by screen size</source>
+			</trans-unit>
+			<trans-unit id="properties.classHideByScreenSize.ui.help.message" xml:space="preserve">
+				<source>Set the visibility of the content element for a particular device.</source>
+			</trans-unit>
+			<trans-unit id="properties.classPrintVisibility" xml:space="preserve">
+				<source>Print visibility</source>
+			</trans-unit>
+			<trans-unit id="properties.classPrintVisibility.ui.help.message" xml:space="preserve">
+				<source>Similar to the regular responsive classes, use these for toggling content for print.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

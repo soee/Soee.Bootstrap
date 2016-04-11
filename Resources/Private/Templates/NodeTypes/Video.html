@@ -1,0 +1,41 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+
+<{tagName} {attributes -> f:format.raw()}>
+<f:if condition="{videoId}">
+    <f:then>
+        <f:switch expression="{videoSource}">
+            <f:case value="vimeo">
+                <f:if condition="{showThumbnail}">
+                    <f:then>thumb</f:then>
+                    <f:else>
+                        <iframe src="//player.vimeo.com/video/{videoId}" width="{width}" height="{height}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </f:else>
+                </f:if>
+            </f:case>
+            <f:case value="vimeo-api">
+                <f:if condition="{showThumbnail}">
+                    <f:then>
+                        <img src="//i.ytimg.com/vi/{videoId}/mqdefault.jpg" class="img-fluid" />
+                    </f:then>
+                    <f:else>
+                        <iframe src="//player.vimeo.com/video/{videoId}?api=1" width="{width}" height="{height}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </f:else>
+                </f:if>
+            </f:case>
+            <f:defaultCase>
+                <f:if condition="{showThumbnail}">
+                    <f:then>
+                        <img src="//i.ytimg.com/vi/{videoId}/mqdefault.jpg" class="img-fluid" />
+                    </f:then>
+                    <f:else>
+                        <iframe src="//www.youtube.com/embed/{videoId}?wmode=transparent" width="{width}" height="{height}" allowfullscreen></iframe>
+                    </f:else>
+                </f:if>
+            </f:defaultCase>
+        </f:switch>
+    </f:then>
+    <f:else>
+        <p class="text-center">{f:translate(id:'specifyVideoUrl', package:'Soee.Bootstrap')}</p>
+    </f:else>
+</f:if>
+</{tagName}>

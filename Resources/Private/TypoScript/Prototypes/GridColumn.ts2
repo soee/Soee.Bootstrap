@@ -1,0 +1,16 @@
+prototype(Soee.Bootstrap:GridColumn) < prototype(Soee.Bootstrap:Content) {
+    templatePath = 'resource://Soee.Bootstrap/Private/Templates/NodeTypes/GridColumn.html'
+    sectionName = 'gridColumn'
+
+    attributes.class {
+        columnWidth = ${q(node).property('classColumnWidth') ? Array.join(q(node).property('classColumnWidth'), ' ') : null}
+        columnOrder = ${q(node).property('classColumnOrder') ? Array.join(q(node).property('classColumnOrder'), ' ') : null}
+        columnOffset = ${q(node).property('classColumnOffset') ? Array.join(q(node).property('classColumnOffset'), ' ') : null}
+    }
+
+    // column reset
+    addColumnReset = ${q(node).property('classColumnReset') != null ? true:false}
+    columnResetClasses = ${q(node).property('classColumnReset') ? Array.join(q(node).property('classColumnReset'), ' ') : null}
+
+    columnContent = TYPO3.Neos:ContentCollectionRenderer
+}

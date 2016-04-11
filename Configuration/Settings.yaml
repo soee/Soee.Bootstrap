@@ -1,0 +1,29 @@
+TYPO3:
+  Neos:
+    typoScript:
+      autoInclude:
+        'Soee.Bootstrap': TRUE
+
+    userInterface:
+      translation:
+        autoInclude:
+          'Soee.Bootstrap': ['Inspector', 'Main', 'Settings', 'NodeTypes/*']
+
+Soee:
+  Bootstrap:
+    devices:
+      xs:
+       label: 'Soee.Bootstrap:Settings:devices.extraSmall'
+      sm:
+        label: 'Soee.Bootstrap:Settings:devices.small'
+      md:
+        label: 'Soee.Bootstrap:Settings:devices.medium'
+      lg:
+        label: 'Soee.Bootstrap:Settings:devices.large'
+      xl:
+        label: 'Soee.Bootstrap:Settings:devices.extraLarge'
+
+    gridSize: 12
+
+    gridColumnSettings:
+

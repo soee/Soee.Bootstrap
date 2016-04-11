@@ -1,0 +1,8 @@
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+
+<!-- Grid Column element -->
+<f:section name="gridContainer">
+    <{tagName} {attributes->f:format.raw()}>
+        <ts:render path="containerContent" />
+    </{tagName}>
+</f:section>

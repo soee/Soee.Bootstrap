@@ -1,0 +1,24 @@
+{
+  "name": "soee/bootstrap",
+  "type": "typo3-flow-plugin",
+  "keywords": ["bootstrap", "twitter", "neos", "cms", "nodetype", "framework", "components", "configuration", "css"],
+  "description": "Neos CMS NodeTypes based on Twitter Bootstrap framework.",
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "Marcin Sągol",
+      "email": "kontakt@soee.pl",
+      "homepage": "http://soee.pl",
+      "twitter": "https://twitter.com/marcinsagol",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "typo3/neos-nodetypes": "~2.1"
+  },
+  "autoload": {
+    "psr-0": {
+      "Soee\\Bootstrap": "Classes"
+    }
+  }
+}
