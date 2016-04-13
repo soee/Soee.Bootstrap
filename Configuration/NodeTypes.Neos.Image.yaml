@@ -1,4 +1,4 @@
-'TYPO3.Neos.NodeTypes:Image':
+'TYPO3.Neos.NodeTypes:ImageMixin':
   ui:
     inspector:
       tabs:
