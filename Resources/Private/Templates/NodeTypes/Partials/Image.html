@@ -14,8 +14,15 @@
 			</f:if>
 		</f:then>
 		<f:else>
-			<f:if condition="{neos:rendering.inEditMode()} || {showDummyImage}">
-				<img src="{dummyImageSrc}" title="Dummy image" alt="Dummy image" class="neos-handle img-fluid" />
+			<f:if condition="{showDummyImage}">
+				<f:then>
+					<img src="{dummyImageSrc}" title="Dummy image" alt="Dummy image" class="neos-handle img-fluid" />
+				</f:then>
+				<f:else>
+					<f:if condition="{neos:rendering.inEditMode()}">
+						<img src="{dummyImageSrc}" title="Dummy image" alt="Dummy image" class="neos-handle img-fluid" />
+					</f:if>
+				</f:else>
 			</f:if>
 		</f:else>
 	</f:if>
