@@ -6,6 +6,8 @@ prototype(TYPO3.Neos.NodeTypes:Image) {
         path = 'resource://TYPO3.Neos/Public/Images/dummy-image.svg'
     }
 
+    showDummyImage = ${Configuration.setting('Soee.Bootstrap.components.image.alwaysShowDummyImage')}
+
     imageClass = TYPO3.TypoScript:RawArray
     imageClass {
         fluid = 'img-fluid'

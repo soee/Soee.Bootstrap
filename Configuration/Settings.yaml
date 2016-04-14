@@ -25,5 +25,6 @@ Soee:
 
     gridSize: 12
 
-    gridColumnSettings:
-
+    components:
+      image:
+        alwaysShowDummyImage: FALSE
