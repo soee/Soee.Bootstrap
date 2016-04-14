@@ -1,6 +1,11 @@
 prototype(TYPO3.Neos.NodeTypes:Image) {
     templatePath = 'resource://Soee.Bootstrap/Private/Templates/NodeTypes/Image.html'
 
+    // this allow to change dummy image for Image NodeType
+    dummyImageSrc = TYPO3.TypoScript:ResourceUri {
+        path = 'resource://TYPO3.Neos/Public/Images/dummy-image.svg'
+    }
+
     imageClass = TYPO3.TypoScript:RawArray
     imageClass {
         fluid = 'img-fluid'
