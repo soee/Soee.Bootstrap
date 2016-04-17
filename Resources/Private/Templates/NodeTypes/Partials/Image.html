@@ -16,11 +16,11 @@
 		<f:else>
 			<f:if condition="{showDummyImage}">
 				<f:then>
-					<img src="{dummyImageSrc}" title="Dummy image" alt="Dummy image" class="neos-handle img-fluid" />
+					<img src="{dummyImageSrc}" alt="{alternativeText}" title="{title}" class="neos-handle img-fluid" />
 				</f:then>
 				<f:else>
 					<f:if condition="{neos:rendering.inEditMode()}">
-						<img src="{dummyImageSrc}" title="Dummy image" alt="Dummy image" class="neos-handle img-fluid" />
+						<img src="{dummyImageSrc}" alt="{alternativeText}" title="{title}" class="neos-handle img-fluid" />
 					</f:if>
 				</f:else>
 			</f:if>
