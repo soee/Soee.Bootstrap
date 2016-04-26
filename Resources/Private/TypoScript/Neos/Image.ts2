@@ -1,12 +1,22 @@
 prototype(TYPO3.Neos.NodeTypes:Image) {
     templatePath = 'resource://Soee.Bootstrap/Private/Templates/NodeTypes/Image.html'
 
-    // this allow to change dummy image for Image NodeType
+    // this allow to change dummy image for Image node
     dummyImageSrc = TYPO3.TypoScript:ResourceUri {
         path = 'resource://TYPO3.Neos/Public/Images/dummy-image.svg'
     }
 
     showDummyImage = ${Configuration.setting('Soee.Bootstrap.components.image.alwaysShowDummyImage')}
+
+    @override.url = ${this.link}
+
+    // use this to add attributes to link around image
+    linkAttributes = TYPO3.TypoScript:Attributes {
+        href = ${url}
+        class = TYPO3.TypoScript:RawArray {
+            @process.removeIfEmpty = ${Array.join(value, '') ? value : null}
+        }
+    }
 
     imageClass = TYPO3.TypoScript:RawArray
     imageClass {
