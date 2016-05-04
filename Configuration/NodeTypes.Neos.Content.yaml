@@ -5,21 +5,12 @@
 # -----------------------------------------------------------------------------
 
 'TYPO3.Neos.NodeTypes:TwoColumn':
-  abstract: TRUE
-
+  abstract: true
 'TYPO3.Neos.NodeTypes:ThreeColumn':
-  abstract: TRUE
-
+  abstract: true
 'TYPO3.Neos.NodeTypes:FourColumn':
-  abstract: TRUE
-
-# -----------------------------------------------------------------------------
-#
-# Extend TYPO3.Neos:Content
-#
-# -----------------------------------------------------------------------------
-
+  abstract: true
 'TYPO3.Neos:Content':
   superTypes:
-    'Soee.Bootstrap:AbstractVisibility': TRUE
-    'Soee.Bootstrap:AbstractExtendedProperties': TRUE
+    'Soee.Bootstrap:AbstractVisibility': '1'
+    'Soee.Bootstrap:AbstractExtendedProperties': '1'
