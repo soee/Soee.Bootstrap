@@ -12,5 +12,5 @@
   abstract: true
 'TYPO3.Neos:Content':
   superTypes:
-    'Soee.Bootstrap:AbstractVisibility': '1'
-    'Soee.Bootstrap:AbstractExtendedProperties': '1'
+    'Soee.Bootstrap:AbstractVisibility': true
+    'Soee.Bootstrap:AbstractExtendedProperties': true
