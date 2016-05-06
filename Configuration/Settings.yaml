@@ -8,6 +8,16 @@ TYPO3:
       translation:
         autoInclude:
           'Soee.Bootstrap': ['Inspector', 'Main', 'Settings', 'NodeTypes/*']
+  Form:
+    presets:
+      default:
+        formElementTypes:
+          'TYPO3.Form:TextMixin':
+            properties:
+              elementClassAttribute: 'form-control'
+          'TYPO3.Form:MultiLineText':
+            properties:
+              elementClassAttribute: 'form-control'
 
 Soee:
   Bootstrap:
