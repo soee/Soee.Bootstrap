@@ -27,7 +27,7 @@
           group: video
           position: 10
       validation:
-        TYPO3.Neos/Validation/NotEmptyValidator: {  }
+        TYPO3.Neos/Validation/NotEmptyValidator: []
     videoSource:
       type: string
       defaultValue: youtube
@@ -47,7 +47,7 @@
               vimeo-api:
                 label: 'Vimeo with JavaScript API'
       validation:
-        TYPO3.Neos/Validation/NotEmptyValidator: {  }
+        TYPO3.Neos/Validation/NotEmptyValidator: []
     width:
       type: integer
       defaultValue: 400
@@ -58,8 +58,8 @@
           group: video
           position: 30
       validation:
-        TYPO3.Neos/Validation/NotEmptyValidator: {  }
-        TYPO3.Neos/Validation/IntegerValidator: {  }
+        TYPO3.Neos/Validation/NotEmptyValidator: []
+        TYPO3.Neos/Validation/IntegerValidator: []
     height:
       type: integer
       defaultValue: 300
@@ -70,8 +70,8 @@
           group: video
           position: 40
       validation:
-        TYPO3.Neos/Validation/NotEmptyValidator: {  }
-        TYPO3.Neos/Validation/IntegerValidator: {  }
+        TYPO3.Neos/Validation/NotEmptyValidator: []
+        TYPO3.Neos/Validation/IntegerValidator: []
     aspectRatio:
       type: string
       defaultValue: 16by9
@@ -93,8 +93,8 @@
               1by1:
                 label: '1:1'
       validation:
-        TYPO3.Neos/Validation/NotEmptyValidator: {  }
-        TYPO3.Neos/Validation/StringValidator: {  }
+        TYPO3.Neos/Validation/NotEmptyValidator: []
+        TYPO3.Neos/Validation/StringValidator: []
     showThumbnail:
       type: boolean
       defaultValue: false
@@ -105,4 +105,4 @@
           group: thumbnail
           position: 60
       validation:
-        TYPO3.Neos/Validation/BooleanValidator: {  }
+        TYPO3.Neos/Validation/BooleanValueValidator: []
