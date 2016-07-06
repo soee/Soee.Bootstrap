@@ -104,5 +104,3 @@
         inspector:
           group: thumbnail
           position: 60
-      validation:
-        TYPO3.Neos/Validation/BooleanValueValidator: []
